@@ -1,0 +1,32 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Raw Data (Ignore large kaggle datasets to prevent GitHub upload errors)
+data/
+*.csv
+*.zip
+
+# Ignore all pickle files by default, but explicitly allow our dashboard model
+*.pkl
+!dashboard/model.pkl
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
