@@ -5,7 +5,7 @@
 ![LightGBM](https://img.shields.io/badge/LightGBM-4.3.0-green.svg)
 ![SHAP](https://img.shields.io/badge/SHAP-Explainable%20AI-orange.svg)
 
-**Live Dashboard:** [👉 Click here to view the live Streamlit Dashboard](#) *(Replace this # with your actual Streamlit link once deployed!)*
+**Live Dashboard:** [👉 Click here to view the live Streamlit Dashboard](#https://fraud-detection-system-pl.streamlit.app/)
 
 ---
 
