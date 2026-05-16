@@ -10,16 +10,20 @@ import os
 
 st.set_page_config(page_title="Fraud Operations Dashboard", page_icon="🛡️", layout="wide")
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 @st.cache_resource
 def load_model_artifacts():
-    with open('model.pkl', 'rb') as f:
+    model_path = os.path.join(BASE_DIR, 'model.pkl')
+    with open(model_path, 'rb') as f:
         artifacts = pickle.load(f)
     return artifacts
 
 @st.cache_data
 def load_and_score_data():
     # Load dataset
-    df = pd.read_parquet('sample_data.parquet')
+    data_path = os.path.join(BASE_DIR, 'sample_data.parquet')
+    df = pd.read_parquet(data_path)
     
     # Load model artifacts
     artifacts = load_model_artifacts()
